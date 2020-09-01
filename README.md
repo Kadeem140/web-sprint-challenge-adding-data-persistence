@@ -18,25 +18,25 @@ In this project you will be given a set of requirements and must design a databa
 
 A `project` is what needs to be done. We want to store the following data about a `project`:
 
--   [ ] a unique ID.
--   [ ] a name. This column is required.
--   [ ] a description.
--   [ ] a boolean that indicates if the project has been completed. This column is required, the default value should be `false`.
+-   [ ok ] a unique ID.
+-   [ ok ] a name. This column is required.
+-   [ ok ] a description.
+-   [ ok ] a boolean that indicates if the project has been completed. This column is required, the default value should be `false`.
 
 A `resource` is anything needed to complete a project, some examples are: a person, a tool, a meeting room or a software license. We want to store the following data about a `resource`:
 
--   [ ] a unique ID.
--   [ ] a name. This column is required.
--   [ ] a description.
+-   [ok ] a unique ID.
+-   [ok ] a name. This column is required.
+-   [ok ] a description.
 
 The database should not allow resources with duplicate names.
 
 A `task` is one of the steps needed to complete the project. We want to store the following data about an `task`.
 
--   [ ] a unique ID.
--   [ ] a description of what needs to be done. This column is required.
--   [ ] a notes column to add additional information.
--   [ ] a boolean that indicates if the task has been completed. This column cannot be NULL, the default value should be `false`.
+-   [ ok ] a unique ID.
+-   [ ok ] a description of what needs to be done. This column is required.
+-   [ ok ] a notes column to add additional information.
+-   [ ok ] a boolean that indicates if the task has been completed. This column cannot be NULL, the default value should be `false`.
 
 ### Commits
 
@@ -46,13 +46,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. Explain the difference between `Relational Databases` and `SQL`.
+1. Explain the difference between `Relational Databases` and `SQL`. 
+
+-A Relational Database is defined as database that manipulates data based structured query language(SQL).
+SQL is the language we use to communicate with the Relational Database.
+
 
 2. Why do tables need a `primary key`?
+The identifying columns of a table , which should be unique.
+
+-Primary Keys are used to make sure the data in a specific column is unique
+
 
 3. What is the name given to a table column that references the primary key on another table.
 
+-The Foreign Key 
+
 4. What do we need in order to have a _many to many_ relationship between two tables.
+
+-We need to use a Join table to establish a many to many relationship between two tables.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
